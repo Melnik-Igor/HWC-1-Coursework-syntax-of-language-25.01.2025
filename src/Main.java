@@ -3,7 +3,7 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
-    Employee[] employees = new Employee[10];
+        Employee[] employees = new Employee[10];
 
         employees[0] = new Employee("Иванов Иван Иванович", 1, 60000);
         employees[1] = new Employee("Петрова Надежда Александровна", 2, 82000);
