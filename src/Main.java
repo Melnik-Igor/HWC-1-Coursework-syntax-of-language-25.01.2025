@@ -31,10 +31,7 @@ public class Main {
         System.out.println("Средняя зарплата: " + averageSalary + "р.");
 
         printEmployeesNames(employees);
-
-
     }
-
     public static void allEmployees(Employee[] employees) {
         for (int i = 0; i < employees.length; i++) {
             if (employees[i] != null) {
@@ -42,7 +39,6 @@ public class Main {
             }
         }
     }
-
     public static int calculateSalary(Employee[] employees) {
         int totalSalary = 0;
         for (int i = 0; i < employees.length; i++) {
@@ -52,7 +48,6 @@ public class Main {
         }
         return totalSalary;
     }
-
     public static Employee findMinSalary(Employee[] employees) {
         Employee minSalary = null;
         for (int i = 0; i < employees.length; i++) {
@@ -62,7 +57,6 @@ public class Main {
         }
         return minSalary;
     }
-
     public static Employee findMaxSalary(Employee[] employees) {
         Employee maxSalary = null;
         for (int i = 0; i < employees.length; i++) {
@@ -72,7 +66,6 @@ public class Main {
         }
         return maxSalary;
     }
-
     public static int calculateAverageSalary(Employee[] employees) {
         int total = calculateSalary(employees);
         int count = 0;
@@ -83,7 +76,6 @@ public class Main {
         }
         return count > 0 ? total / count : 0;
     }
-
     public static void printEmployeesNames(Employee[] employees) {
         System.out.println("ФИО всех сотрудников: ");
         for (int i = 0; i < employees.length; i++) {
